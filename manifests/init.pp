@@ -17,6 +17,7 @@ class dhcp (
   String $omapi_algorithm = 'HMAC-MD5',
   Optional[String] $omapi_key = undef,
   Optional[String] $pxeserver = undef,
+  Optional[String] $ipxe_bootstrap = undef,
   String $pxefilename = $dhcp::params::pxefilename,
   Optional[Integer[0]] $mtu  = undef,
   Hash[String, String] $bootfiles = $dhcp::params::bootfiles,
